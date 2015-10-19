@@ -99,4 +99,5 @@ module.exports = function (grunt) {
   });
   grunt.registerTask('serve', ['connect', 'watch']);
   grunt.registerTask('test', ['jshint', 'connect', 'qunit']);
+  grunt.registerTask('build', ['jshint', 'connect', 'clean', 'concat', 'uglify']);
 };

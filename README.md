@@ -22,6 +22,34 @@ In your web page:
 </script>
 ```
 
+## Dependencies and project building
+
+Install required npm mobules
+
+```
+sudo npm install
+
+```
+
+Install bower dependencies
+
+```
+bower install
+```
+
+Building the project
+
+```
+grunt build
+```
+
+Generated files will be available at the dist folder:
+
+```
+dist/jquery.jquery-password-generator-plugin.js
+dist/jquery.jquery-password-generator-plugin.min.js
+```
+
 
 ## License
 
