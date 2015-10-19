@@ -1,0 +1,10 @@
+{
+  "name": "jquery-password-generator-plugin",
+  "version": "1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "qunit": "~1.12.0",
+    "jquery-legacy": "jquery#1.10",
+    "jquery-modern": "jquery#2"
+  }
+}
