@@ -3,15 +3,12 @@
 Fast jQuery plugin for generating random passwords for your web pages.
 
 
-## Getting Started
-
-### DOWNLOAD 
-- [production version][min] (compressed)
-- [development version][max] (with formatting and comments)
+### Download 
+- [Production version][min] (minimized)
+- [Development version][max] (with code formatting and comments)
 
 [min]: https://raw.githubusercontent.com/ssokurenko/jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.min.js
 [max]: https://raw.githubusercontent.com/ssokurenko/jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.js
-
 
 
 ### Usage on your web page:
@@ -31,7 +28,7 @@ Fast jQuery plugin for generating random passwords for your web pages.
 [Password Generator Plugin](http://ssokurenko.github.io/jquery-password-generator-plugin/)
 
 
-## Installing Project dependencies
+## Project Setup for Development and Testing
 
 Install required npm mobules
 
