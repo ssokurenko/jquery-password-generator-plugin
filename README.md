@@ -46,9 +46,9 @@ bower install
 grunt serve
 ```
 
-If everything goes OK, the Demo will be available at: [http://localhost:7777]
+If everything goes OK, the Demo will be available at: [http://localhost:7777](http://localhost:7777)
 
-Tests can be found at: [http://localhost:7777/test/jquery-password-generator-plugin.html]
+Tests can be found at: [http://localhost:7777/test/jquery-password-generator-plugin.html](http://localhost:7777/test/jquery-password-generator-plugin.html)
 
 ### Run tests
 ```
