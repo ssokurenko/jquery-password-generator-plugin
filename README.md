@@ -1,14 +1,14 @@
-# PassGen Password Generator jQuery Plugin
+# Password Generator jQuery Plugin
 
-> Robust plugin for generating passwords.
+Fast jQuery plugin for generating random passwords for your web pages.
 
 
 ## Getting Started
 
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.githubusercontent.com/ssokurenko/jquery-jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.min.js
-[max]: https://raw.githubusercontent.com/ssokurenko/jquery-jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.js
+[min]: https://raw.githubusercontent.com/ssokurenko/jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.min.js
+[max]: https://raw.githubusercontent.com/ssokurenko/jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.js
 
 In your web page:
 
@@ -17,12 +17,12 @@ In your web page:
 <script src="dist/jquery-password-generator-plugin.min.js"></script>
 <script>
   jQuery(function ($) {
-    $.awesome(); // "awesome"
+    console.log($.passGen());
   });
 </script>
 ```
 
-## Dependencies and project building
+## Installing dependencies
 
 Install required npm mobules
 
@@ -37,7 +37,27 @@ Install bower dependencies
 bower install
 ```
 
-Building the project
+## Grunt commands
+
+
+### Run server
+
+```
+grunt serve
+```
+
+If everything goes OK, the Demo will be available at: [http://localhost:7777]
+
+Tests can be found at: [http://localhost:7777/test/jquery-password-generator-plugin.html]
+
+### Run tests
+```
+grunt test
+```
+
+Test results will be available at the console
+
+### Building the project
 
 ```
 grunt build
