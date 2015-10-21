@@ -6,15 +6,43 @@
 
 (function ($) {
   $.passGen = function (options) {
-    // Override default options with passed-in options.
+    // Override default options with passed-in options
     options = $.extend({}, $.passGen.options, options);
 
-    // Return the name of your plugin plus a punctuation character.
-    return 'passGen works' + options.punctuation;
+    // Local varialbles declaration
+    var charsets, charset = '', password = '', index;
+
+    // Available character lists
+    charsets = {
+      'numeric'   : '0123456789',
+      'lowercase' : 'abcdefghijklmnopqrstuvwxyz',
+      'uppercase' : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+    };
+
+    // Defining merged character set
+    $.each(charsets, function(key, value) {
+      if (options[key]) {
+        charset += value;
+      }
+    });
+
+    // Generating the password
+    for (var i=0; i< options.length; i++) {
+      // defining random character index
+      index = Math.floor(Math.random() * (charset.length));
+      // adding the character to the password
+      password += charset[index];
+    }
+
+    // Returning generated password value
+    return password;
   };
 
-  // Default options.
+  // Default options
   $.passGen.options = {
-    punctuation: '.'
+    'length' : 10,
+    'numeric' : true,
+    'lowercase' : true,
+    'uppercase' : true
   };
 }(jQuery));
