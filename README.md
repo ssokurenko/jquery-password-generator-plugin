@@ -1,7 +1,10 @@
 # Password Generator jQuery Plugin
 
-Fast jQuery plugin for generating random passwords for your web pages.
+Fast jQuery plugin for generating strong random passwords for your web pages.
 
+### Live DEMO
+
+[Password Generator Plugin](http://ssokurenko.github.io/jquery-password-generator-plugin/)
 
 ### Download 
 - [Production version][min] (minimized)
@@ -11,21 +14,42 @@ Fast jQuery plugin for generating random passwords for your web pages.
 [max]: https://raw.githubusercontent.com/ssokurenko/jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.js
 
 
-### Usage on your web page:
+### Usage examples
+
+#### Basic usage
+
+```
+$.passgen()
+```
 
 ```html
 <script src="jquery.js"></script>
 <script src="dist/jquery-password-generator-plugin.min.js"></script>
 <script>
-  jQuery(function ($) {
-    console.log($.passGen());
-  });
+
+  $(document).ready(
+    function(){
+      prompt('Generated password is:', $.passGen());
+    }
+  );
+
 </script>
 ```
 
-### Live DEMO
+#### Usage with custom parameters
 
-[Password Generator Plugin](http://ssokurenko.github.io/jquery-password-generator-plugin/)
+```
+$.passGen({'length' : 8, 'numeric' : true, 'lowercase' : true, 'uppercase' : true})
+```
+
+You can redefined all or specific options:
+
+| Option | Description | Default value |
+| ------ | ----------- | ------------- |
+| length | Number of characters | 10 |
+| numbers | Use numbers (0, 1, 2, etc...) | true |
+| lowercase | Use lowercase letters (a, b, c, etc...) | true |
+| uppercase | Use uppercase lettesr (A, B, C, etc...) | true |
 
 
 ## Project Setup for Development and Testing
