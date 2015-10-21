@@ -1,10 +1,9 @@
 (function ($) {
   module('jQuery.passGen');
 
-  test('is passGen', function () {
-    expect(2);
-    strictEqual($.passGen(), 'passGen.', 'should be passGen');
-    strictEqual($.passGen({punctuation: '!'}), 'passGen!', 'should be thoroughly passGen');
+  test('is string', function () {
+    expect(1);
+    strictEqual(typeof($.passGen()), 'string', 'Generated password should be a string');
   });
 
 }(jQuery));
