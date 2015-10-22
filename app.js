@@ -1,6 +1,18 @@
+var password;
+
 // Entry point for the demo
 $(document).ready(
+
     function(){
-        prompt('Generated password is:', $.passGen({'length' : 8, 'numeric' : true, 'lowercase' : true, 'uppercase' : true}));
+      $('.btn').click(
+        function(){
+          // generatinng the password
+          password = eval($(this).html()) || '';
+
+          // displaying the value
+          $('#generated-password').html(password);
+
+        }
+      );
     }
 );

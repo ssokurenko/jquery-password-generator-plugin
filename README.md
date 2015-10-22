@@ -49,7 +49,7 @@ You can redefined all or specific options:
 | length | Number of characters | 10 |
 | numbers | Use numbers (0, 1, 2, etc...) | true |
 | lowercase | Use lowercase letters (a, b, c, etc...) | true |
-| uppercase | Use uppercase lettesr (A, B, C, etc...) | true |
+| uppercase | Use uppercase letters (A, B, C, etc...) | true |
 
 
 ## Project Setup for Development and Testing

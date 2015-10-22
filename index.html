@@ -12,9 +12,29 @@
   </head>
   <body>
       <div class="container">
-          <div class="jumbotron padding">
-            <h1 class="padding">$.passGen DEMO</h1>
-            <p>Password Generator jQuery Plugin</p>
+          <h1 class="padding">$.passGen DEMO</h1>
+          <p>Password Generator jQuery Plugin</p>
+          <div class="jumbotron bg-primary">
+            <p>Press a button to generate an example password:</p>
+            <div class="row">
+              <div class="col-md-6">
+                </p>
+                  <a class="btn btn-default" href="#" role="button">$.passGen()</a>
+                </p>
+                <p>
+                  <a class="btn btn-default" href="#" role="button">$.passGen({'length' : 12})</a>
+                </p>
+                <p>
+                  <a class="btn btn-default" href="#" role="button">$.passGen({'length' : 8, 'numeric' : false})</a>
+                </p>
+                <p class="padding">
+                  <a class="btn btn-default" href="#" role="button">$.passGen({'length' : 16, 'uppercase' : false})</a>
+                </p>
+              </div>
+              <div class="col-md-6" class="text-center">
+                <h2 id="generated-password" class="text-center"></h2>
+              </div>
+            </div>
           </div>
       </div>
 
