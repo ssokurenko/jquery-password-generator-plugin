@@ -39,7 +39,7 @@ $.passgen()
 #### Usage with custom parameters
 
 ```
-$.passGen({'length' : 8, 'numeric' : true, 'lowercase' : true, 'uppercase' : true})
+$.passGen({'length' : 8, 'numeric' : true, 'lowercase' : true, 'uppercase' : true, 'special' : false})
 ```
 
 You can redefined all or specific options:
@@ -50,6 +50,7 @@ You can redefined all or specific options:
 | numbers | Use numbers (0, 1, 2, etc...) | true |
 | lowercase | Use lowercase letters (a, b, c, etc...) | true |
 | uppercase | Use uppercase letters (A, B, C, etc...) | true |
+| special | Use special characters (!, @, #, $, etc...) | false |
 
 
 ## Project Setup for Development and Testing

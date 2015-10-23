@@ -17,6 +17,7 @@
       'numeric'   : '0123456789',
       'lowercase' : 'abcdefghijklmnopqrstuvwxyz',
       'uppercase' : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+      'special'   : '~!@#$%^&*()-+[]{}<>?'
     };
 
     // Defining merged character set
@@ -43,6 +44,7 @@
     'length' : 10,
     'numeric' : true,
     'lowercase' : true,
-    'uppercase' : true
+    'uppercase' : true,
+    'special'   : false
   };
 }(jQuery));
