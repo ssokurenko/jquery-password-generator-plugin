@@ -1,6 +1,6 @@
 # Password Generator jQuery Plugin
 
-Fast jQuery plugin for generating strong random passwords for your web pages.
+Fast jQuery plugin for generating strong random passwords.
 
 ### Live DEMO
 
@@ -22,24 +22,24 @@ Fast jQuery plugin for generating strong random passwords for your web pages.
 $.passgen()
 ```
 
-```html
+```
 <script src="jquery.js"></script>
 <script src="dist/jquery-password-generator-plugin.min.js"></script>
 <script>
 
   $(document).ready(
     function(){
-      prompt('Generated password is:', $.passGen());
+      alert('Generated password: ' + $.passGen());
     }
   );
 
 </script>
 ```
 
-#### Usage with custom parameters
+#### Usage with custom options
 
 ```
-$.passGen({'length' : 8, 'numeric' : true, 'lowercase' : true, 'uppercase' : true, 'special' : false})
+$.passGen({'length' : 10, 'numeric' : true, 'lowercase' : true, 'uppercase' : true, 'special' : false})
 ```
 
 You can redefined all or specific options:
@@ -53,7 +53,7 @@ You can redefined all or specific options:
 | special | Use special characters (!, @, #, $, etc...) | false |
 
 
-## Project Setup for Development and Testing
+## Local Project Setup
 
 Install required npm mobules
 
@@ -77,7 +77,7 @@ bower install
 grunt serve
 ```
 
-If everything goes OK, the Demo will be available at: [http://localhost:7777](http://localhost:7777)
+If everything goes OK, the server will be available at: [http://localhost:7777](http://localhost:7777)
 
 Tests can be found at: [http://localhost:7777/test/jquery-password-generator-plugin.html](http://localhost:7777/test/jquery-password-generator-plugin.html)
 
