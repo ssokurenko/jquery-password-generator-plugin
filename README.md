@@ -13,6 +13,19 @@ Fast jQuery plugin for generating strong random passwords.
 [min]: https://raw.githubusercontent.com/ssokurenko/jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.min.js
 [max]: https://raw.githubusercontent.com/ssokurenko/jquery-password-generator-plugin/master/dist/jquery.jquery-password-generator-plugin.js
 
+### Installation with Node Package Manger
+```
+npm install jquery-password-generator-plugin
+```
+
+Code will be available at the node_modules folder
+
+You could also install it globally (use sudo if needed):
+
+```
+sudo npm install -g jquery-password-generator-plugin
+```
+
 
 ### Usage examples
 
